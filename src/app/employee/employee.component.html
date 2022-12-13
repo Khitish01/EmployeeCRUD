@@ -15,7 +15,7 @@
                     <!-- Card Header -->
                     <div class="d-flex justify-content-center align-items-center position-relative mb-4">
                         <h4 class="card-title text-center">Employee Details</h4>
-                        <button class="btn btn-secondary position-absolute top-0 end-0 close-modal">&times;</button>
+                        <a class="btn btn-secondary position-absolute top-0 end-0 close-modal">&times;</a>
 
                     </div>
 
@@ -140,13 +140,13 @@
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{employeeForm.value.fullname}}</td>
+                        <td>{{employeeForm.value.phone}}</td>
+                        <td>{{employeeForm.value.email}}</td>
+                        <td>{{employeeForm.value.dob}}</td>
+                        <td>{{employeeForm.value.designation}}</td>
+                        <td>{{employeeForm.value.gender}}</td>
+                        <td>{{employeeForm.value.password}}</td>
                         <td>
                             <button type="button" class="btn btn-primary">Edit</button>
                             <button type="button" class="btn btn-danger">Delete</button>
