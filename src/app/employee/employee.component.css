@@ -1,0 +1,7 @@
+.background-modal{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+.card{
+  z-index: 1;
+}
