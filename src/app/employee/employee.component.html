@@ -51,10 +51,12 @@
                     <!-- Designation -->
                     <div>
                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" formControlName="designation">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option selected value="none" disabled>Open this select menu</option>
+                            <option value="Software Developer Trainee">Software Developer Trainee</option>
+                            <option value="Software Developer">Software Developer</option>
+                            <option value="Senior Software Developer">Senior Software Developer</option>
+                            <option value="Team Lead">Team Lead</option>
+                            <option value="Project Manager">Project Manager</option>
                         </select>
                     </div>
 
@@ -123,7 +125,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <!-- <tr>
                         <th scope="row">1</th>
                         <td>Khitish Mangal</td>
                         <td>8117079653</td>
@@ -136,18 +138,18 @@
                             <button type="button" class="btn btn-primary">Edit</button>
                             <button type="button" class="btn btn-danger">Delete</button>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">{{index[0].id}}</th>
-                        <td>{{index[0].fullname}}</td>
-                        <td>{{index[0].phone}}</td>
-                        <td>{{index[0].email}}</td>
-                        <td>{{index[0].dob}}</td>
-                        <td>{{index[0].designation}}</td>
-                        <td>{{index[0].gender}}</td>
-                        <td>{{index[0].password}}</td>
+                    </tr> -->
+                    <tr *ngFor="let data of employeeData">
+                        <th scope="row">{{data.id}}</th>
+                        <td>{{data.fullname}}</td>
+                        <td>{{data.phone}}</td>
+                        <td>{{data.email}}</td>
+                        <td>{{data.dob | date}}</td>
+                        <td>{{data.designation}}</td>
+                        <td>{{data.gender}}</td>
+                        <td>{{data.password}}</td>
                         <td>
-                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-primary edit" (click)="updateData(data)">Edit</button>&nbsp;
                             <button type="button" class="btn btn-danger">Delete</button>
                         </td>
                     </tr>

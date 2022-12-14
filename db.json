@@ -11,6 +11,30 @@
       "confirmpassword": "11111",
       "check": true,
       "id": 1
+    },
+    {
+      "fullname": "XYZ",
+      "phone": 1987654221,
+      "email": "khitigj@hh.guj",
+      "dob": "3333-03-31",
+      "designation": "2",
+      "gender": "Male",
+      "password": "9999",
+      "confirmpassword": "9999",
+      "check": true,
+      "id": 2
+    },
+    {
+      "fullname": "gfkhwgekg",
+      "phone": 783567835678,
+      "email": "hb,ksjhgkb@jhg.jhg",
+      "dob": "4444-04-04",
+      "designation": "2",
+      "gender": "Male",
+      "password": "2222",
+      "confirmpassword": "2222",
+      "check": true,
+      "id": 3
     }
   ],
   "comments": [
