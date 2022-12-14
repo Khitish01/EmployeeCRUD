@@ -12,11 +12,10 @@
             <form class="card position-absolute top-50 start-50 translate-middle d-none" style="width: 50%;" [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
                 <div class="card-body">
 
-                    <!-- Card Header -->
+                    <!-- Card Title -->
                     <div class="d-flex justify-content-center align-items-center position-relative mb-4">
                         <h4 class="card-title text-center">Employee Details</h4>
                         <a class="btn btn-secondary position-absolute top-0 end-0 close-modal">&times;</a>
-
                     </div>
 
 
@@ -64,17 +63,17 @@
                     <div class="mb-3">
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" formControlName="gender"
-                                value="option1">
+                                value="Male">
                             <label class="form-check-label" for="inlineRadio1">Male</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" formControlName="gender"
-                                value="option2">
+                                value="Female">
                             <label class="form-check-label" for="inlineRadio2">Female</label>
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="gender" id="inlineRadio3" formControlName="gender"
-                                value="option3">
+                                value="Others">
                             <label class="form-check-label" for="inlineRadio3">Others</label>
                         </div>
                     </div>
@@ -102,7 +101,7 @@
 
                 <!-- Submit Button -->
                 <div class="card-body text-end">
-                    <button type="submit" class="btn btn-success fs-4"  >Submit</button>
+                    <button type="submit" class="btn btn-success fs-4 submit-button"  >Submit</button>
 
                 </div>
             </form>
@@ -139,14 +138,14 @@
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td>{{employeeForm.value.fullname}}</td>
-                        <td>{{employeeForm.value.phone}}</td>
-                        <td>{{employeeForm.value.email}}</td>
-                        <td>{{employeeForm.value.dob}}</td>
-                        <td>{{employeeForm.value.designation}}</td>
-                        <td>{{employeeForm.value.gender}}</td>
-                        <td>{{employeeForm.value.password}}</td>
+                        <th scope="row">{{index[0].id}}</th>
+                        <td>{{index[0].fullname}}</td>
+                        <td>{{index[0].phone}}</td>
+                        <td>{{index[0].email}}</td>
+                        <td>{{index[0].dob}}</td>
+                        <td>{{index[0].designation}}</td>
+                        <td>{{index[0].gender}}</td>
+                        <td>{{index[0].password}}</td>
                         <td>
                             <button type="button" class="btn btn-primary">Edit</button>
                             <button type="button" class="btn btn-danger">Delete</button>

@@ -1,21 +1,16 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
       "fullname": "Khitish Mangal",
       "phone": 7377279183,
-      "email": "khitish.m@npglobals.com",
-      "dob": "1999-02-15",
-      "designation": "1",
-      "gender": "option1",
-      "password": "123456",
-      "confirmpassword": "123456",
+      "email": "khitishmangal@npglobals.com",
+      "dob": "2222-02-22",
+      "designation": "2",
+      "gender": "Male",
+      "password": "11111",
+      "confirmpassword": "11111",
       "check": true,
-      "id": 3
+      "id": 1
     }
   ],
   "comments": [
